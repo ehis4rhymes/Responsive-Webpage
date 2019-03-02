@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>RESPONSIVE NAVIGATION BAR</title>
+		<meta name="viewport" content-type="width=device-width initial-scale=1">
+        <link rel="stylesheet" href="stylep.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".hamburger-btn .fa-times").hide();
+				
+				$(".hamburger-btn .fa-bars").click(function(){
+                   $(this).hide();
+				   $(".hamburger-btn .fa-times").show();
+				   $("nav.tab ul").css("left", "0px");
+				   $("nav.mob ul").css("left", "0px");
+				});
+				
+				$(".hamburger-btn .fa-times").click(function(){
+                   $(this).hide();
+				   $(".hamburger-btn .fa-bars").show();
+				   $("nav.tab ul").css("left", "-50%");
+				   $("nav.mob ul").css("left", "-75%");
+				});
+				
+            }); 
+        
+        </script> 
+    </head>
+    <body>
+        
+        <div class="container">
+		
+		<!-- The Desktop View Starts Here -->
+            <nav class="desk">
+                <ul>
+                <li class="active"><a href="#">home</a></li>
+                <li><a href="#">solutions</a></li>
+                <li><a href="#">services</a>
+				     <ul>
+					<li><a href="#">enterprise softwares</a></li>
+                    <li><a href="#">web application</a></li>
+                    <li><a href="#">cyber security</a></li>
+                    <li><a href="#">online advertising</a></li>
+					<li><a href="#">mobile apps</a></li>
+                    <li><a href="#">data analytics</a></li>
+                    <li><a href="#">IoT</a></li>
+					</ul>
+				</li>
+                <li><a href="#">insight</a></li>
+                <li><a href="#">about</a>
+				    <ul>
+					<li><a href="#">the company</a></li>
+                    <li><a href="#">the team</a></li>
+                    <li><a href="#">join us</a></li>
+                    <li><a href="#">contact us</a></li>
+					</ul>
+				</li>
+                </ul>
+            </nav>
+			
+			<div class="hamburger-btn">
+				  <i class="fas fa-times"></i>
+				  <i class="fas fa-bars"></i>
+			</div>
+			
+			<!-- The Tablet View Starts Here -->
+			<nav class="tab">
+			
+                <ul>
+                <li class="active"><a href="#">home</a></li>
+                <li><a href="#">solutions</a></li>
+                <li><a href="#">services</a>
+				    <ul>
+					<li><a href="#">enterprise softwares</a></li>
+                    <li><a href="#">web application</a></li>
+                    <li><a href="#">cyber security</a></li>
+                    <li><a href="#">online advertising</a></li>
+					<li><a href="#">mobile apps</a></li>
+                    <li><a href="#">data analytics</a></li>
+                    <li><a href="#">IoT</a></li>
+					</ul>
+				</li>
+                <li><a href="#">insight</a></li>
+                <li><a href="#">about</a>
+				    <ul>
+					<li><a href="#">the company</a></li>
+                    <li><a href="#">the team</a></li>
+                    <li><a href="#">join us</a></li>
+                    <li><a href="#">contact us</a></li>
+					</ul> 
+				</li>
+                </ul>
+            </nav>
+			
+			<!-- The Mobile View Starts Here -->
+			<nav class="mob">
+			
+                <ul>
+                <li class="active"><a href="#">home</a></li>
+                <li><a href="#">solutions</a></li>
+                <li><a href="#">services</a>
+				    <ul>
+					<li><a href="#">enterprise softwares</a></li>
+                    <li><a href="#">web application</a></li>
+                    <li><a href="#">cyber security</a></li>
+                    <li><a href="#">online advertising</a></li>
+					<li><a href="#">mobile apps</a></li>
+                    <li><a href="#">data analytics</a></li>
+                    <li><a href="#">IoT</a></li>
+					</ul>
+				</li>
+                <li><a href="#">insight</a></li>
+                <li><a href="#">about</a>
+				    <ul>
+					<li><a href="#">the company</a></li>
+                    <li><a href="#">the team</a></li>
+                    <li><a href="#">join us</a></li>
+                    <li><a href="#">contact us</a></li>
+					</ul> 
+				</li>
+                </ul>
+            </nav>
+	    </div>
+		
+    </body>
+</html>
